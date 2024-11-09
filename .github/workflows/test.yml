@@ -7,7 +7,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
           - name: Wwelcome Tishan and Udit
-            run: echo "Hi Tishan, Udit and Bangaaru"
+            run: echo "Hi Tishan, Udit and Bangaaru "
           
           - name: List File
             run: ls

@@ -18,7 +18,9 @@ jobs:
           - name: list All Files in Repo
             run: ls -ltar
 
+          - name: Modify Shell script
+            run:  chmod +x ascii-script.sh
+
           - name: Execution Shell script
-            run: |
-                chmod +x ascii-script.sh
-                ./ascii-script.sh
+            run:  ./ascii-script.sh
+                

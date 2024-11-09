@@ -1,0 +1,25 @@
+name: My First Workflow
+
+on: push
+
+jobs:
+    first_job:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout Repo
+            uses: actions/checkout@v4
+
+          - name: Wwelcome Bangaaru, Tishan and Udit
+            run: |
+                echo "Hi Tishan, Udit and Bangaaru "
+                ls -ltra
+                cat README
+          
+          - name: Generate ASCII Artwork
+            run: cowsay -f dragon "Run for cover, i am a Dragon.." >> dragon.txt
+
+          #- name: List File
+          #  run: ls
+
+          #- name: Read File
+          #  run: cat README.md

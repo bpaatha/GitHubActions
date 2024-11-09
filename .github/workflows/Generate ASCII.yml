@@ -13,13 +13,19 @@ jobs:
             run: |
                 echo "Hi Tishan, Udit and Bangaaru "
                 ls -ltra
-                cat README
+                cat README.md
+        
+          - name: Install Cowsay program
+            run: sudo apt-get install cowsay -y
           
           - name: Generate ASCII Artwork
             run: cowsay -f dragon "Run for cover, i am a Dragon.." >> dragon.txt
 
-          #- name: List File
-          #  run: ls
+          - name: Test file exist
+            run: grep -i "dragon" dragon.txt
 
-          #- name: Read File
-          #  run: cat README.md
+          - name: List File
+            run: ls
+
+          - name: Read File
+            run: cat dragon.txt

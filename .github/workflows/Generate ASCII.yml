@@ -19,5 +19,5 @@ jobs:
             run: ls -ltar
 
           - name: Execution Shell script
-            run:  sh ascii-script.txt
+            run:  sudo sh ascii-script.sh
                 
